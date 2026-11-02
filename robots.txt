@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: 公開URL確定後にドメインを差し替え
+Sitemap: https://lp.skyupinc.com/sitemap.xml
