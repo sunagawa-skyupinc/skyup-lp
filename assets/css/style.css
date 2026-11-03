@@ -410,6 +410,8 @@ body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
 .prose dl { display: grid; grid-template-columns: 7em 1fr; gap: 8px 16px; }
 .prose dt { font-weight: 700; }
 .prose dd { margin: 0; }
+.prose ul { padding-left: 1.5em; }
+.prose li + li { margin-top: 6px; }
 .thanks-box { max-width: 720px; text-align: center; margin: 0 auto; }
 .thanks-box .btns { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
 .thanks-icon { width: 64px; height: 64px; margin: 0 auto 24px; color: var(--color-primary); }
