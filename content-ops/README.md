@@ -4,13 +4,14 @@
 **砂川さんが読む必要はありません。** Claude はここを読んでから作業します。
 
 ## 毎週の流れ（毎週水曜 自動開始）
-1. `editorial-guide.md` と `topics.md` を読む
+1. `editorial-guide.md`・`topics.md`・`linkedin-template.md` と、砂川さんの発信ルール文書（Claude Docs）を読む
 2. 直近1〜2週間のニュースを WebSearch で調べ、テーマに合う話題を1つ選ぶ（一次情報・公的統計を優先）
 3. `articles/<slug>.json` を `"status": "draft"` で作成
    - slug 形式：`YYYY-MM-英語の短い説明`
 4. 一時的に `"published"` にして `python3 content-ops/build.py` → スクリーンショットで崩れを確認 → `draft` に戻して再ビルド
 5. LinkedIn 投稿文を `linkedin-template.md` に沿って作り、JSON の `linkedin_post` に入れる
-6. 砂川さんに「記事のスクリーンショット」「要約」「LinkedIn 投稿文」を送って確認を依頼
+6. 砂川さんに「記事のスクリーンショット」「要約」「LinkedIn 投稿文＋最初のコメント」を送って確認を依頼
+   - あわせて、共感型の投稿（失敗談・現場の一言・問いかけ）用に、**砂川さんへの質問を2つ**送る（例：「今週、採用担当の方に言われて印象に残った一言は？」）。答えをもらったら、それを素材に短い投稿文を作る（素材にないエピソードは足さない）
 7. 「OK」が出たら `published` にしてビルド → コミット → PR 作成 → main にマージ（＝公開）
 8. `topics.md` の該当テーマに公開日を記入
 

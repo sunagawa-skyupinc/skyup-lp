@@ -1,3 +1,4 @@
-# 砂川さんの発信スタイル メモ
+# 砂川さんの発信スタイル
 
-（LinkedIn の過去投稿を共有してもらったら、口調・よく使うテーマ・言い回しをここに要約する）
+正は Claude Docs の発信ルール文書: https://claude.ai/artifact/3efTdAV5gQWZBHAYqA9Vdv
+ここには追加で気づいたことだけをメモする。
