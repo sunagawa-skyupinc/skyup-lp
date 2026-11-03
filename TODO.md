@@ -4,7 +4,7 @@
 確認コマンド（残りを探す）：`grep -rn "要記入\|TODO" --include=*.html --include=*.js .`
 
 ## A. 設定（config.js）
-- [ ] `forms.consultation`：顧客向け「30分無料相談」の Microsoft Forms 埋め込みURL
+- [x] `forms.consultation`：顧客向け「30分無料相談」の Microsoft Forms 埋め込みURL
 - [ ] `forms.partner`：パートナー応募の Microsoft Forms 埋め込みURL
 - [ ] `forms.height`：フォームの長さに合わせて iframe の高さを調整
 - [ ] `analytics.ga4MeasurementId`：GA4 測定ID（G-XXXXXXXXXX）

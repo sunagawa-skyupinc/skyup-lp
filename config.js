@@ -27,7 +27,7 @@ window.SITE_CONFIG = {
   forms: {
     // Microsoft Forms の埋め込み用URL（iframe の src の中身）。未設定 '' のときは「準備中」と表示。
     // 例: 'https://forms.office.com/Pages/ResponsePage.aspx?id=XXXXXXXX&embed=true'
-    consultation: '', // TODO: 顧客向け「30分無料相談」フォームURL【要記入】
+    consultation: 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=TTb19UmezEWFtYDj6ZMeYMZiTPmWAOtGj2y61kIkbK9UNU5FVzVYUkVBUEkwUTM2RkJHUzdEMEpNQi4u&embed=true', // 30分無料相談
     partner: '',      // TODO: パートナー応募フォームURL【要記入】
     height: 1200,     // iframe の高さ(px)。フォームの長さに合わせて調整
   },
