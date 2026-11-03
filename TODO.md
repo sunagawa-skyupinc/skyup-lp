@@ -5,7 +5,7 @@
 
 ## A. 設定（config.js）
 - [x] `forms.consultation`：顧客向け「30分無料相談」の Microsoft Forms 埋め込みURL
-- [ ] `forms.partner`：パートナー応募の Microsoft Forms 埋め込みURL
+- [x] `forms.partner`：パートナー応募の Microsoft Forms 埋め込みURL
 - [ ] `forms.height`：フォームの長さに合わせて iframe の高さを調整
 - [ ] `analytics.ga4MeasurementId`：GA4 測定ID（G-XXXXXXXXXX）
 - [ ] `site.url`：公開URLの確定（仮：https://lp.skyupinc.com）
