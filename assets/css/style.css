@@ -8,24 +8,25 @@
 /* ---------- 1. デザイントークン ---------- */
 :root {
   /* ▼ ブランドカラー（仮）: ここを差し替える */
-  --color-primary: #0a3d62;        /* メイン（ロゴの空色を深くした青） */
-  --color-primary-700: #0b6496;    /* メインの明るめ（リンク等） */
-  --color-primary-050: #eaf4fb;    /* メインのごく薄い背景 */
+  --color-primary: #0b649f;        /* メイン（ロゴの空色に合わせた青） */
+  --color-primary-700: #0a5a8f;    /* リンク等の文字色 */
+  --color-primary-050: #eaf5fc;    /* メインのごく薄い背景 */
   --color-brand-sky: #0081bb;      /* ロゴ背景の空色（装飾用。白文字は不可） */
-  --hero-gradient: linear-gradient(160deg, #0a3d62 0%, #0b5c8f 100%);
+  --hero-gradient: linear-gradient(160deg, #0b649f 0%, #0a6fae 100%);
+  --color-accent-on-dark: #fff0d1; /* 青背景の上の小さな強調文字 */
   --color-accent: #f0a81c;         /* アクセント（CTA・強調） */
   --color-accent-hover: #ffbd3d;
-  --color-on-accent: #0a3d62;      /* アクセント上の文字色 */
+  --color-on-accent: #0a2f4d;      /* アクセント上の文字色 */
   --color-accent-ink: #8a5800;     /* 白背景上でアクセント色の文字を使う場合 */
 
   /* ▼ ニュートラル */
   --color-bg: #ffffff;
-  --color-bg-alt: #f5f7fa;
+  --color-bg-alt: #f2f8fc;
   --color-text: #17202e;
   --color-text-muted: #4b5668;
   --color-line: #d6dee8;
   --color-on-primary: #ffffff;
-  --color-on-primary-muted: #d3e6f3;
+  --color-on-primary-muted: #e3f0f9;
   --color-grid: rgba(255, 255, 255, 0.06); /* 紺背景の方眼 */
   --color-grid-light: rgba(10, 61, 98, 0.05);
 
@@ -154,7 +155,7 @@ address { font-style: normal; }
   color: var(--color-primary-700); margin-bottom: 12px;
 }
 .eyebrow::after { content: ""; flex: 0 0 40px; height: 1px; background: currentColor; }
-.section-dark .eyebrow { color: var(--color-accent); }
+.section-dark .eyebrow { color: var(--color-accent-on-dark); }
 .section-title { font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2.125rem); color: var(--color-primary); }
 .section-dark .section-title { color: var(--color-on-primary); }
 .section-lead { margin-top: 16px; color: var(--color-text-muted); max-width: 46em; }
@@ -213,7 +214,7 @@ address { font-style: normal; }
   padding: 48px 0 56px;
 }
 .hero-inner { display: grid; gap: 32px; align-items: center; }
-.hero-label { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .14em; color: var(--color-accent); margin-bottom: 16px; }
+.hero-label { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .14em; color: var(--color-accent-on-dark); margin-bottom: 16px; }
 .hero-title { font-size: clamp(1.75rem, 1.1rem + 3.4vw, 3rem); line-height: 1.4; letter-spacing: .03em; }
 .hero-lead { margin-top: 20px; color: var(--color-on-primary-muted); font-size: 1rem; max-width: 34em; }
 .hero .tags { margin-top: 24px; color: var(--color-on-primary); }
@@ -299,7 +300,7 @@ address { font-style: normal; }
   margin-top: 48px; padding: 24px 20px; border: 1px solid rgba(255, 255, 255, .3); border-radius: var(--radius);
   display: grid; gap: 12px;
 }
-.case-label { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .14em; color: var(--color-accent); }
+.case-label { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .14em; color: var(--color-accent-on-dark); }
 .case-title { font-size: 1.25rem; }
 .case-text { color: var(--color-on-primary-muted); }
 .section-dark .note { color: var(--color-on-primary-muted); }
@@ -382,14 +383,14 @@ address { font-style: normal; }
 .sticky-cta {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
   padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
-  background: rgba(10, 61, 98, .96);
+  background: rgba(11, 100, 159, .97);
   transform: translateY(110%); transition: transform .25s;
 }
 .sticky-cta.is-visible { transform: translateY(0); }
 .sticky-cta .btn { width: 100%; }
 
 /* ---------- 15. フッター ---------- */
-.site-footer { background: #072b45; color: var(--color-on-primary-muted); padding: 48px 0 24px; font-size: .875rem; }
+.site-footer { background: #08527f; color: var(--color-on-primary-muted); padding: 48px 0 24px; font-size: .875rem; }
 body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
 .footer-inner { display: grid; gap: 32px; }
 .footer-name { color: #fff; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
@@ -405,7 +406,7 @@ body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
     var(--hero-gradient);
   color: var(--color-on-primary); padding: 48px 0;
 }
-.page-hero .eyebrow { color: var(--color-accent); }
+.page-hero .eyebrow { color: var(--color-accent-on-dark); }
 .page-title { font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem); }
 .prose { max-width: 820px; }
 .prose h2 { font-size: 1.25rem; color: var(--color-primary); margin-top: 48px; padding-bottom: 8px; border-bottom: 2px solid var(--color-primary); }
