@@ -34,6 +34,6 @@ window.SITE_CONFIG = {
 
   analytics: {
     // Google Analytics 4 の測定ID（例: 'G-XXXXXXXXXX'）。未設定 '' のときは読み込みません。
-    ga4MeasurementId: '', // TODO: GA4 測定ID【要記入】
+    ga4MeasurementId: 'G-M4B8LS1QNL', // スカイアップLP
   },
 };
