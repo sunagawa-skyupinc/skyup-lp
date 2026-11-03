@@ -393,6 +393,11 @@ address { font-style: normal; }
 .site-footer { background: #08527f; color: var(--color-on-primary-muted); padding: 48px 0 24px; font-size: .875rem; }
 body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
 .footer-inner { display: grid; gap: 32px; }
+.corp-banner { display: block; margin-bottom: 48px; border-radius: var(--radius); overflow: hidden; background: #fff; text-decoration: none; }
+.corp-banner img { width: 100%; height: auto; }
+.corp-banner-text { display: flex; justify-content: center; align-items: center; gap: 8px; padding: 14px 16px; color: var(--color-primary) !important; font-weight: 700; font-size: .9375rem; }
+.corp-banner-text::after { content: ""; width: 7px; height: 7px; border-top: 2px solid currentColor; border-right: 2px solid currentColor; transform: rotate(45deg); }
+.corp-banner:hover .corp-banner-text { text-decoration: underline; }
 .footer-name { color: #fff; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
 .site-footer a { color: #fff; }
 .footer-nav ul { list-style: none; display: grid; gap: 10px; }

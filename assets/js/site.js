@@ -91,6 +91,9 @@
   var footer = document.getElementById('site-footer');
   if (footer) {
     footer.innerHTML =
+      (c.url ? '<div class="container"><a class="corp-banner" href="' + esc(c.url) + '" rel="noopener" data-cta="corporate">' +
+        '<img src="assets/img/corporate-banner.jpg" alt="スカイアップがエンジニア転職に革命を SUPPORT YOUR DREAM" width="1400" height="371" loading="lazy">' +
+        '<span class="corp-banner-text">株式会社スカイアップ 公式サイトへ</span></a></div>' : '') +
       '<div class="container footer-inner">' +
         '<div class="footer-company">' +
           '<img class="footer-logo" src="assets/img/logo-white.png" alt="" width="628" height="148">' +
@@ -101,7 +104,6 @@
             (c.building ? '<br>' + esc(c.building) : '') +
             (c.tel ? '<br>TEL <a href="' + esc(telHref()) + '">' + esc(c.tel) + '</a>' : '') +
           '</address>' +
-          (c.url ? '<p><a href="' + esc(c.url) + '" rel="noopener">コーポレートサイト</a></p>' : '') +
         '</div>' +
         '<nav class="footer-nav" aria-label="フッターメニュー"><ul>' +
           '<li><a href="index.html">採用代行・RPOサービス</a></li>' +
