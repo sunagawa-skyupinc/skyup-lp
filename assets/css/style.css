@@ -8,12 +8,14 @@
 /* ---------- 1. デザイントークン ---------- */
 :root {
   /* ▼ ブランドカラー（仮）: ここを差し替える */
-  --color-primary: #0c2340;        /* メイン（紺） */
-  --color-primary-700: #17385f;    /* メインの明るめ */
-  --color-primary-050: #eef3f8;    /* メインのごく薄い背景 */
+  --color-primary: #0a3d62;        /* メイン（ロゴの空色を深くした青） */
+  --color-primary-700: #0b6496;    /* メインの明るめ（リンク等） */
+  --color-primary-050: #eaf4fb;    /* メインのごく薄い背景 */
+  --color-brand-sky: #0081bb;      /* ロゴ背景の空色（装飾用。白文字は不可） */
+  --hero-gradient: linear-gradient(160deg, #0a3d62 0%, #0b5c8f 100%);
   --color-accent: #f0a81c;         /* アクセント（CTA・強調） */
   --color-accent-hover: #ffbd3d;
-  --color-on-accent: #0c2340;      /* アクセント上の文字色 */
+  --color-on-accent: #0a3d62;      /* アクセント上の文字色 */
   --color-accent-ink: #8a5800;     /* 白背景上でアクセント色の文字を使う場合 */
 
   /* ▼ ニュートラル */
@@ -23,9 +25,9 @@
   --color-text-muted: #4b5668;
   --color-line: #d6dee8;
   --color-on-primary: #ffffff;
-  --color-on-primary-muted: #c3cfdd;
+  --color-on-primary-muted: #d3e6f3;
   --color-grid: rgba(255, 255, 255, 0.06); /* 紺背景の方眼 */
-  --color-grid-light: rgba(12, 35, 64, 0.05);
+  --color-grid-light: rgba(10, 61, 98, 0.05);
 
   /* ▼ 文字 */
   --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Yu Gothic", Meiryo, system-ui, sans-serif;
@@ -112,7 +114,9 @@ address { font-style: normal; }
   display: flex; align-items: center; gap: 12px;
 }
 .brand { display: flex; align-items: center; gap: 8px; color: var(--color-primary); text-decoration: none; font-weight: 700; margin-right: auto; }
-.brand-mark { width: 28px; height: 28px; flex: none; }
+.brand-logo { height: 22px; width: auto; display: block; }
+.brand-sub { display: none; font-size: .75rem; color: var(--color-text-muted); font-weight: 600; letter-spacing: .04em; white-space: nowrap; }
+.footer-logo { height: 24px; width: auto; margin-bottom: 12px; }
 .brand-text { font-size: .875rem; letter-spacing: .02em; white-space: nowrap; }
 .header-cta { white-space: nowrap; }
 .menu-btn {
@@ -133,7 +137,7 @@ address { font-style: normal; }
   display: none;
   position: absolute; left: 0; right: 0; top: var(--header-h);
   background: var(--color-bg); border-bottom: 1px solid var(--color-line);
-  box-shadow: 0 12px 24px rgba(12, 35, 64, .08);
+  box-shadow: 0 12px 24px rgba(10, 61, 98, .08);
 }
 .is-open .gnav { display: block; }
 .gnav ul { list-style: none; padding: 8px var(--gutter) 16px; }
@@ -204,7 +208,7 @@ address { font-style: normal; }
   background:
     linear-gradient(var(--color-grid) 1px, transparent 1px) 0 0 / 24px 24px,
     linear-gradient(90deg, var(--color-grid) 1px, transparent 1px) 0 0 / 24px 24px,
-    var(--color-primary);
+    var(--hero-gradient);
   color: var(--color-on-primary);
   padding: 48px 0 56px;
 }
@@ -378,14 +382,14 @@ address { font-style: normal; }
 .sticky-cta {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
   padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
-  background: rgba(12, 35, 64, .96);
+  background: rgba(10, 61, 98, .96);
   transform: translateY(110%); transition: transform .25s;
 }
 .sticky-cta.is-visible { transform: translateY(0); }
 .sticky-cta .btn { width: 100%; }
 
 /* ---------- 15. フッター ---------- */
-.site-footer { background: #08182d; color: var(--color-on-primary-muted); padding: 48px 0 24px; font-size: .875rem; }
+.site-footer { background: #072b45; color: var(--color-on-primary-muted); padding: 48px 0 24px; font-size: .875rem; }
 body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
 .footer-inner { display: grid; gap: 32px; }
 .footer-name { color: #fff; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
@@ -398,7 +402,7 @@ body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
   background:
     linear-gradient(var(--color-grid) 1px, transparent 1px) 0 0 / 24px 24px,
     linear-gradient(90deg, var(--color-grid) 1px, transparent 1px) 0 0 / 24px 24px,
-    var(--color-primary);
+    var(--hero-gradient);
   color: var(--color-on-primary); padding: 48px 0;
 }
 .page-hero .eyebrow { color: var(--color-accent); }
@@ -456,7 +460,8 @@ body:has(.sticky-cta) .site-footer { padding-bottom: calc(24px + 80px); }
   .gnav ul { display: flex; gap: 4px; padding: 0; }
   .gnav a { border: 0; padding: 8px 10px; font-size: .875rem; color: var(--color-text); }
   .gnav a:hover { color: var(--color-primary-700); text-decoration: underline; }
-  .brand-text { font-size: 1rem; }
+  .brand-logo { height: 26px; }
+  .brand-sub { display: inline; padding-left: 12px; border-left: 1px solid var(--color-line); }
   .header-cta { margin-left: 8px; }
 
   .hero { padding: 96px 0 104px; }

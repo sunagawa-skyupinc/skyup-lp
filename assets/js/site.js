@@ -59,8 +59,8 @@
     header.innerHTML =
       '<div class="header-inner">' +
         '<a class="brand" href="index.html" aria-label="' + esc(c.name) + ' トップへ">' +
-          '<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1.5" y="1.5" width="29" height="29" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21 L14 15 L18 19 L24 11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/><circle cx="24" cy="11" r="2.4" fill="var(--color-accent)"/></svg>' +
-          '<span class="brand-text">' + esc(c.name) + '</span>' +
+          '<img class="brand-logo" src="assets/img/logo.png" alt="" width="628" height="148">' +
+          '<span class="brand-sub">' + esc(c.name) + '</span>' +
         '</a>' +
         '<nav class="gnav" id="gnav" aria-label="メインメニュー"><ul>' + links + '</ul></nav>' +
         '<a class="btn btn-accent btn-sm header-cta" href="' + esc(cta.href) + '" data-cta="header">' +
@@ -93,6 +93,7 @@
     footer.innerHTML =
       '<div class="container footer-inner">' +
         '<div class="footer-company">' +
+          '<img class="footer-logo" src="assets/img/logo-white.png" alt="" width="628" height="148">' +
           '<p class="footer-name">' + esc(c.name) + '</p>' +
           '<address>' +
             (c.postalCode ? '〒' + esc(c.postalCode) + '<br>' : '') +
