@@ -117,7 +117,8 @@
     tel: c.tel,
     url: c.url,
     postal: c.postalCode ? '〒' + c.postalCode : '',
-    address: addressLine()
+    address: addressLine(),
+    representative: c.representative
   };
   Array.prototype.forEach.call(document.querySelectorAll('[data-company]'), function (el) {
     var key = el.getAttribute('data-company');

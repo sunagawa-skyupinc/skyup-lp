@@ -16,6 +16,7 @@ window.SITE_CONFIG = {
     building: '日本橋大富ビル3階',
     tel: '03-6403-9286',
     url: 'https://skyupinc.com',
+    representative: '砂川 洋一', // 代表者氏名
   },
 
   site: {
