@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>採用支援パートナー募集（業務委託）｜株式会社スカイアップ</title>
   <meta name="description" content="エンジニア採用を中心とした採用代行（RPO）の業務委託パートナーを募集しています。採用支援の経験者、エンジニア出身で採用に関わりたい方、スカウト・面接代行の経験者の方のご応募をお待ちしています。">
-  <!-- TODO: 公開URL確定後、canonical と og:url / og:image のドメインを差し替え【要記入】 -->
+  
   <link rel="canonical" href="https://lp.skyupinc.com/partners.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
@@ -13,7 +13,7 @@
   <meta property="og:title" content="採用支援パートナー募集（業務委託）｜株式会社スカイアップ">
   <meta property="og:description" content="エンジニアを知るあなたの経験を、採用の現場で。エンジニア採用を中心とした採用支援の業務委託パートナーを募集しています。">
   <meta property="og:url" content="https://lp.skyupinc.com/partners.html">
-  <meta property="og:image" content="https://lp.skyupinc.com/assets/img/ogp-partners.png"><!-- TODO: 仮画像。本番用OGP画像(1200×630)に差し替え -->
+  <meta property="og:image" content="https://lp.skyupinc.com/assets/img/ogp-partners.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0c2340">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -46,11 +46,6 @@
       <div class="container hero-inner">
         <div class="hero-body">
           <p class="hero-label">PARTNER RECRUITING</p>
-          <!--
-            キャッチコピー（仮）。言い換え案:
-            案1：技術がわかる。だから、採用を任される。
-            案2：エンジニアを見てきた目で、エンジニアの採用を支える。
-          -->
           <h1 class="hero-title" id="hero-title"><span class="kw">エンジニアを知る</span><span class="kw">あなたの経験を、</span><span class="kw">採用の現場で。</span></h1>
           <p class="hero-lead">スカイアップでは、エンジニア採用を中心とした採用支援（RPO）を一緒に担っていただける、業務委託のパートナーを募集しています。</p>
           <ul class="tags" aria-label="募集の概要">
@@ -63,13 +58,45 @@
           </div>
         </div>
         <div class="hero-visual">
-          <!-- TODO: 写真・イメージ画像に差し替える場合はこの枠を <img src="..." alt="..." width="1200" height="800"> に置き換え【要記入】 -->
-          <div class="ph-frame" style="background-color:rgba(255,255,255,.04);border-color:rgba(255,255,255,.35);color:var(--color-on-primary-muted)">
-            <div>
-              <span class="mono">IMAGE / 1200 × 800</span>
-              画像差し替え枠
-            </div>
-          </div>
+          <svg viewBox="0 0 400 400" role="img" aria-labelledby="partner-dg-title">
+            <title id="partner-dg-title">IT・Web、機械設計、電気・電子、組み込みの4つの技術領域と採用支援がつながる図</title>
+            <!-- 配線 -->
+            <path class="dg-trace" d="M200 144 V100 H128 M200 100 H272 M200 256 V300 H128 M200 300 H272"/>
+            <path class="dg-trace" d="M144 200 H64 V160 M256 200 H336 V240" stroke-dasharray="4 4"/>
+            <circle class="dg-via" cx="200" cy="100" r="4"/>
+            <circle class="dg-via" cx="200" cy="300" r="4"/>
+            <circle class="dg-via" cx="64" cy="160" r="3"/>
+            <circle class="dg-via" cx="336" cy="240" r="3"/>
+            <!-- 中央 -->
+            <circle class="dg-core" cx="200" cy="200" r="56"/>
+            <text class="dg-sub" x="200" y="190" text-anchor="middle" style="fill:#0c2340">PARTNER</text>
+            <text class="dg-core-text" x="200" y="212" text-anchor="middle">採用支援</text>
+            <!-- 4領域 -->
+            <g>
+              <rect class="dg-node" x="24" y="24" width="104" height="104" rx="4"/>
+              <use href="#ic-it" class="dg-icon" x="56" y="36" width="40" height="40"/>
+              <text class="dg-label" x="76" y="100" text-anchor="middle">IT・Web</text>
+              <text class="dg-sub" x="76" y="116" text-anchor="middle">DOMAIN 01</text>
+            </g>
+            <g>
+              <rect class="dg-node" x="272" y="24" width="104" height="104" rx="4"/>
+              <use href="#ic-mech" class="dg-icon" x="304" y="36" width="40" height="40"/>
+              <text class="dg-label" x="324" y="100" text-anchor="middle">機械設計</text>
+              <text class="dg-sub" x="324" y="116" text-anchor="middle">DOMAIN 02</text>
+            </g>
+            <g>
+              <rect class="dg-node" x="24" y="272" width="104" height="104" rx="4"/>
+              <use href="#ic-elec" class="dg-icon" x="56" y="284" width="40" height="40"/>
+              <text class="dg-label" x="76" y="348" text-anchor="middle">電気・電子</text>
+              <text class="dg-sub" x="76" y="364" text-anchor="middle">DOMAIN 03</text>
+            </g>
+            <g>
+              <rect class="dg-node" x="272" y="272" width="104" height="104" rx="4"/>
+              <use href="#ic-emb" class="dg-icon" x="304" y="284" width="40" height="40"/>
+              <text class="dg-label" x="324" y="348" text-anchor="middle">組み込み</text>
+              <text class="dg-sub" x="324" y="364" text-anchor="middle">DOMAIN 04</text>
+            </g>
+          </svg>
         </div>
       </div>
     </section>
@@ -102,7 +129,6 @@
     </section>
 
     <!-- ===================== 3. 働き方 ===================== -->
-    <!-- 注意：業務委託のため「勤務時間」「指示に従って」など雇用と誤解される表現は使わない -->
     <section class="section section-alt" id="style" aria-labelledby="style-title">
       <div class="container">
         <div class="section-head">
@@ -166,37 +192,6 @@
       </div>
     </section>
 
-    <!-- 案件の例：掲載許可が取れた案件のみ掲載する方針のため非表示。許可が取れたら復活させる
-    <!~~ ===================== 5. 案件の例 ===================== ~~>
-    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">04 / PROJECTS</p>
-          <h2 class="section-title" id="projects-title">業務の例</h2>
-        </div>
-        <!~~ 実績をもとに業務内容だけを抽象化して掲載（社名・業種・報酬額は載せない） ~~>
-        <ul class="project-grid" role="list">
-          <li class="card project-card">
-            <span class="card-id">EXAMPLE 01</span>
-            <h3 class="card-title">新卒採用の一次面接</h3>
-            <p class="card-text">担当業務：面接代行<br>稼働：面接枠単位でのご参画</p>
-          </li>
-          <li class="card project-card">
-            <span class="card-id">EXAMPLE 02</span>
-            <h3 class="card-title">地域採用の一連の業務</h3>
-            <p class="card-text">担当業務：母集団形成〜面接〜クロージング<br>稼働：リモート中心＋出張あり</p>
-          </li>
-          <li class="card project-card">
-            <span class="card-id">EXAMPLE 03</span>
-            <h3 class="card-title">エージェント管理と書類選考</h3>
-            <p class="card-text">担当業務：エージェント開拓・管理、書類の一次選考<br>稼働：完全リモート</p>
-          </li>
-        </ul>
-        <p class="note">※業務内容・稼働は案件ごとに異なります。</p>
-      </div>
-    </section>
-
-    -->
     <!-- ===================== 6. 応募の流れ ===================== -->
     <section class="section" id="flow" aria-labelledby="flow-title">
       <div class="container">
