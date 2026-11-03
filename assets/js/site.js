@@ -34,6 +34,7 @@
       { href: lp('#services'), label: 'サービス' },
       { href: lp('#pricing'), label: '料金' },
       { href: lp('#faq'), label: 'よくある質問' },
+      { href: 'column.html', label: 'コラム' },
       { href: 'partners.html', label: 'パートナー募集' }
     ],
     partner: [
@@ -41,6 +42,7 @@
       { href: '#style', label: '働き方' },
       { href: '#merits', label: '魅力' },
       { href: '#flow', label: '応募の流れ' },
+      { href: 'column.html', label: 'コラム' },
       { href: 'index.html', label: '法人のお客様へ' }
     ]
   };
@@ -108,6 +110,7 @@
         '<nav class="footer-nav" aria-label="フッターメニュー"><ul>' +
           '<li><a href="index.html">採用代行・RPOサービス</a></li>' +
           '<li><a href="partners.html">パートナー募集</a></li>' +
+          '<li><a href="column.html">コラム</a></li>' +
           '<li><a href="privacy.html">個人情報の取扱い</a></li>' +
         '</ul></nav>' +
       '</div>' +
