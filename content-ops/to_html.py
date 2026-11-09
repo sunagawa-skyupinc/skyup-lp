@@ -27,7 +27,7 @@ def inline(t):
 
 def convert(src):
     lines = src.splitlines()
-    out = ['<div style="max-width:760px;margin:0 auto;font-size:16px;line-height:1.9;color:#17202e;">']
+    out = ['<div style="max-width:100%;margin:0 auto;font-size:16px;line-height:1.9;color:#17202e;">']
     i = 0
     def flush_list(items, boxed=True, color=None):
         st = 'margin:0 0 24px;padding:20px 24px 20px 44px;border:1px solid #d6dee8;border-radius:8px;' if boxed else 'margin:0 0 16px;padding:0 0 0 24px;'
